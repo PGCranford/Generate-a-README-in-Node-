@@ -9,12 +9,6 @@ function renderLicenseBadge(license) {
 
 }
 
-//Which license would you like to include 
-url apache 
-url b
-none
-
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) { }
@@ -22,10 +16,26 @@ function renderLicenseLink(license) { }
 // TODO: Create a function that returns the license section of README
 
 function renderLicenseSection(license) {
-  if apache {
-    return link
+  if (${ MIT }) {
+    return ('https://img.shields.io/badge/License-MIT-yellow.svg')
   }
+  else if (Apache 2.0) {
+    return ('https://img.shields.io/badge/License-Apache_2.0-blue.svg')
+  }
+
+  else if (BSD) {
+    return ('https://img.shields.io/badge/License-BSD_3--Clause-blue.svg')
+
+  }
+
+  else if (Mozilla Public License 2.0) {
+    return ('https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg')
+
+  }
+
+
   if none {
+    ""
 
   }
 }

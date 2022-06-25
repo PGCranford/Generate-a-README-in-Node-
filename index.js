@@ -73,10 +73,10 @@ const questions = userInput => {
 
             {
                 type: "input",
-                name: "contributorsInput",
+                name: "inputContributors",
                 message: "Plese list the contributors for your project",
-                validate: (contributorsInput) => {
-                    if (contributorsInput) {
+                validate: (inputContributors) => {
+                    if (inputContributors) {
                         return true;
                     }
                     else {
@@ -108,7 +108,7 @@ const questions = userInput => {
 
                     }
                 },
-                when: ({ confirmtTsts }) => confirmtTsts
+                when: ({ confirmTsts }) => confirmTsts
 
 
             },
@@ -132,10 +132,11 @@ const questions = userInput => {
                 default: true
             },
             {
-                type: "checkbox",
+                type: "list",
                 name: "license",
                 message: "Which license would you like to include",
-                choices: ['MIT', 'Apache 2.0', 'BSD' 'GPL', 'Mozilla Public License 2.0']
+                choices: ['MIT', 'Apache 2.0', 'BSD', 'Mozilla Public License 2.0']
+
             },
         ]);
 };
