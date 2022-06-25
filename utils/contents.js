@@ -1,0 +1,37 @@
+const readmeContents = userData => {
+
+    let titleInput;
+    let installationInput;
+    let usageInput;
+    let contributorsInput;
+    let tstsInput;
+    let contactInput;
+
+
+    // make # titleInput
+
+    // make ## installationInput
+
+    // make ## usageInput
+
+    // make ## contributorsInput
+
+    // make ##  tstsInput 
+
+    // make ##  contactInput
+
+    // make ## license input
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
