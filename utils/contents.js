@@ -7,8 +7,13 @@ const readmeContents = userData => {
     let tstsInput;
     let contactInput;
 
+    function createContents() {
+        // make # titleInput
+        if (!titleInput) {
+             =[];
+    }
 
-    // make # titleInput
+
 
     // make ## installationInput
 
@@ -21,6 +26,7 @@ const readmeContents = userData => {
     // make ##  contactInput
 
     // make ## license input
+}
 
 
 

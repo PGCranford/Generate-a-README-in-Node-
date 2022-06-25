@@ -24,6 +24,8 @@ const questions = userInput => {
                     }
                 }
             },
+
+
             {
                 type: "input",
                 name: "installation",
@@ -40,36 +42,39 @@ const questions = userInput => {
             },
             {
                 type: "confirm",
-                name: "confirmUsage ",
+                name: "confirmUsage",
                 message: "Would you like to provide uses for your project?",
                 default: true
             },
             {
                 type: "input",
-                name: "inputUsage ",
+                name: "inputUsage",
                 message: "Plese list the uses for your project",
                 validate: (usageInput) => {
                     if (usageInput) {
                         return true;
                     }
                     else {
-                        console.log("Please enter a name for your project");
+                        console.log("Please enter uses for your project");
                         return false;
 
                     }
-                }
+                },
+                when: ({ confirmUsage }) => confirmUsage
             },
 
             {
                 type: "confirm",
-                name: "confirmContributors ",
+                name: "confirmContributors",
                 message: "Would you like to include other contributors?",
                 default: true
             },
+
+
             {
                 type: "input",
                 name: "contributorsInput",
-                message: "Plese list the uses for your project",
+                message: "Plese list the contributors for your project",
                 validate: (contributorsInput) => {
                     if (contributorsInput) {
                         return true;
@@ -77,21 +82,22 @@ const questions = userInput => {
                     else {
                         console.log("Please enter the contirbutors to the project.");
                         return false;
-
                     }
-                }
+                },
+                when: ({ confirmContributors }) => confirmContributors
+
 
             },
             {
                 type: "confirm",
-                name: "confirmTsts ",
+                name: "confirmTsts",
                 message: "Would you like to include tests of your project?",
                 default: true
             },
             {
                 type: "input",
                 name: "tstsInput",
-                message: "Plese list the uses for your project",
+                message: "Plese list the test for your project",
                 validate: (tstsInput) => {
                     if (tstsInput) {
                         return true;
@@ -101,25 +107,36 @@ const questions = userInput => {
                         return false;
 
                     }
-                }
+                },
+                when: ({ confirmtTsts }) => confirmtTsts
 
 
             },
             {
                 type: "input",
                 name: "contact",
-                message: "Please provide contact information for user questions(Required)",
+                message: "Please provide your GitHub username for user questions(Required)",
                 validate: (contactInput) => {
                     if (contactInput) {
                         return true;
                     }
                     else {
-                        console.log("Please enter installation instructions");
+                        console.log("Please enter your Github Repo");
                         return false;
                     }
                 }
+            }, {
+                type: "confirm",
+                name: "confirmLicense",
+                message: "Would you like to include an Open Source License?",
+                default: true
             },
-
+            {
+                type: "checkbox",
+                name: "license",
+                message: "Which license would you like to include",
+                choices: ['MIT', 'Apache 2.0', 'BSD' 'GPL', 'Mozilla Public License 2.0']
+            },
         ]);
 };
 
