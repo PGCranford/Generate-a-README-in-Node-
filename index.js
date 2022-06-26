@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
-//const readmeContents = require('./utils/contents.js')
+
 
 // TODO: Create an array of questions for user input
 const questions = userInput => {
@@ -69,14 +69,12 @@ const questions = userInput => {
                 message: "Would you like to include other contributors?",
                 default: true
             },
-
-
             {
                 type: "input",
                 name: "inputContributors",
                 message: "Plese list the contributors for your project",
-                validate: (inputContributors) => {
-                    if (inputContributors) {
+                validate: (contributorsInput) => {
+                    if (contributorsInput) {
                         return true;
                     }
                     else {
@@ -125,7 +123,8 @@ const questions = userInput => {
                         return false;
                     }
                 }
-            }, {
+            },
+            {
                 type: "confirm",
                 name: "confirmLicense",
                 message: "Would you like to include an Open Source License?",
@@ -135,11 +134,21 @@ const questions = userInput => {
                 type: "list",
                 name: "license",
                 message: "Which license would you like to include",
-                choices: ['MIT', 'Apache 2.0', 'BSD', 'Mozilla Public License 2.0']
+                choices: ['MIT', 'Apache', 'BSD', 'Mozilla', 'none'],
+                when: ({ confirmLicense }) => confirmLicense
 
             },
-        ]);
+
+
+        ])
+
+
+    // .then((answer) => {
+    //     answer = (answer.license)
+    // });
+
 };
+
 
 
 // TODO: Create a function to write README file
@@ -150,9 +159,11 @@ questions()
         const createPage = generateMarkdown(userInput);
 
 
-        fs.writeToFile('README.md', createPage, err => {
+
+
+        fs.writeFile('README.md', createPage, err => {
             if (err) throw new Error(err);
-            console.log("README was created!")
+            console.log("README was created!");
         });
     })
 
