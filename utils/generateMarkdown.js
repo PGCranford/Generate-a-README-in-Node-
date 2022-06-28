@@ -60,9 +60,9 @@ const generateMarkdown = userInput => {
   let theTitle = userInput.inputTitle;
 
 
-  return `# ${theTitle}
-  // badgeimage
-  Table of contents  
+  return `# ${theTitle}  
+  // badgeimage  
+  Table of contents    
   1.[Descripition](#-Descripition)  
   2.[Installation Instruction](#Installation-Instructions)  
   3.[Usage](#Usage)  
