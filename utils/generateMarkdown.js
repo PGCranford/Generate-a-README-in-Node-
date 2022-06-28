@@ -63,12 +63,12 @@ const generateMarkdown = userInput => {
   return `# ${theTitle}
   // badgeimage
   Table of contents
-  1.[Descripition](#-Descripition)\
-  2.[Installation Instruction](#Installation-Instructions)\
-  3.[Usage](#Usage)\
-  4.[Contributors](#Contributors)\
-  5.[Test Instruction](#Test-Instruction)\
-  6.[Questions](#Questions)\
+  1.[Descripition](#-Descripition)  
+  2.[Installation Instruction](#Installation-Instructions)  
+  3.[Usage](#Usage)  
+  4.[Contributors](#Contributors)  
+  5.[Test Instruction](#Test-Instruction)  
+  6.[Questions](#Questions)  
 
 
   ## Descripition 
