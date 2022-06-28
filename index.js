@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
-const generateBadge = require('./utils/generateBadge')
+
 
 
 // TODO: Create an array of questions for user input
@@ -99,9 +99,6 @@ const questions = userInput => {
 
                     }
                 },
-                when: ({ confirmTsts }) => confirmTsts
-
-
             },
             {
                 type: "input",
@@ -132,18 +129,13 @@ const questions = userInput => {
 
                 }
             },
-            {
-                type: "confirm",
-                name: "confirmLicense",
-                message: "Would you like to include an Open Source License?",
-                default: true
-            },
+
             {
                 type: "list",
                 name: "license",
                 message: "Which license would you like to include",
                 choices: ['MIT', 'Apache', 'BSD', 'Mozilla', 'none'],
-                when: ({ confirmLicense }) => confirmLicense
+                validate: ({ choices }) => choices
 
             },
 
@@ -151,19 +143,9 @@ const questions = userInput => {
         ])
 
 
-    // .then((answer) => {
-
-    //     answer = (answer.license)
-    // });
-
-
-
-
-
 };
 // TODO: Create a function to write README file
 
-// Function call to initialize app
 questions()
     .then(userInput => {
         const createPage = generateMarkdown(userInput);
