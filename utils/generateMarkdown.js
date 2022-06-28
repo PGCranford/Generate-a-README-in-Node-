@@ -62,7 +62,7 @@ const generateMarkdown = userInput => {
 
   return `# ${theTitle}
   // badgeimage
-  Table of contents
+  Table of contents  
   1.[Descripition](#-Descripition)  
   2.[Installation Instruction](#Installation-Instructions)  
   3.[Usage](#Usage)  
