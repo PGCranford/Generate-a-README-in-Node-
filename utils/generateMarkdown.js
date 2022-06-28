@@ -89,7 +89,7 @@ const generateMarkdown = userInput => {
 
   
   ### Questions 
-  https://github.com/${userInput.contact}
+  https://github.com/${userInput.contact}  
   ${userInput.email}
 
   `;
