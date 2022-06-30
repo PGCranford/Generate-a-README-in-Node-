@@ -5,7 +5,7 @@
 
   1.[Descripition](#Descripition)
 
-  2.[License Information](#Licensce Information)
+  2.[LicenseInformation](#LicensceInformation)
 
   3.[Installation Instruction](#Installation-Instructions)
 
@@ -22,11 +22,11 @@
   test
 
   ## License Information 
-  ![MIT License]('The MIT License is an extremely popular open source software license used on the likes of Ruby on Rails, jQuery, and Node.js. As an open source license, the MIT License dictates what you must, can, and can’t do when you use, modify, and/or redistribute the licensed code)
+  The MIT License is an extremely popular open source software license used on the likes of Ruby on Rails, jQuery, and Node.js. As an open source license, the MIT License dictates what you must, can, and can’t do when you use, modify, and/or redistribute the licensed code
 
   
   ## Installation Instructions 
-  test
+  tets
 
 
   ## Usage 
