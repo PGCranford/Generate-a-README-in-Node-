@@ -25,6 +25,30 @@ function getLicenseBadge(license) {
     return ""
 
   }
+}
+function getBadgeDescription(license) {
+  if (license === 'MIT') {
+    return "![MIT License]('The MIT License is an extremely popular open source software license used on the likes of Ruby on Rails, jQuery, and Node.js. As an open source license, the MIT License dictates what you must, can, and can’t do when you use, modify, and/or redistribute the licensed code)"
+  }
+  else if (license === 'Apache') {
+    return '![Apache License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
+  }
+
+  else if (license === 'BSD') {
+    return '![BSD License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
+
+  }
+
+  else if (license === 'Mozilla') {
+    return '![Mozilla License](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
+
+  }
+
+
+  else if (license === 'none') {
+    return ""
+
+  }
 
 }
 
@@ -40,21 +64,26 @@ const generateMarkdown = userInput => {
 
   Table of contents
 
-  1.[Descripition](#-Descripition)
+  1.[Descripition](#Descripition)
 
-  2.[Installation Instruction](#Installation-Instructions)
+  2.[License Information](#Licensce Information)
 
-  3.[Usage](#Usage)
+  3.[Installation Instruction](#Installation-Instructions)
 
-  4.[Contributors](#Contributors)
+ 4.[Usage](#Usage)
 
-  5.[Test Instruction](#Test-Instruction)
+  5.[Contributors](#Contributors)
 
-  6.[Questions](#Questions)
+  6.[Test Instruction](#Test-Instruction)
+
+  7.[Questions](#Questions)
 
 
   ## Descripition 
   ${userInput.description}
+
+  ## License Information 
+  ${getBadgeDescription(userInput.license)}
 
   
   ## Installation Instructions 
@@ -68,6 +97,7 @@ const generateMarkdown = userInput => {
   ${userInput.inputContributors}
 
   ## Test Instruction 
+  ${userInput.inputTsts}
 
   
   ### Questions 

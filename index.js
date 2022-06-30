@@ -19,7 +19,7 @@ const questions = userInput => {
                         return true;
                     }
                     else {
-                        console.log("Please enter a name for your project");
+                        console.log("Please enter a name for your project.");
                         return false;
 
                     }
@@ -57,7 +57,7 @@ const questions = userInput => {
             {
                 type: "input",
                 name: "inputUsage",
-                message: "Plese list the uses for your project",
+                message: "Plese list the uses for your project.",
                 validate: (usageInput) => {
                     if (usageInput) {
                         return true;
@@ -73,7 +73,7 @@ const questions = userInput => {
             {
                 type: "input",
                 name: "inputContributors",
-                message: "Plese list the contributors for your project",
+                message: "Plese list the contributors for your project.",
                 validate: (contributorsInput) => {
                     if (contributorsInput) {
                         return true;
@@ -117,7 +117,7 @@ const questions = userInput => {
             {
                 type: "input",
                 name: "email",
-                message: "Plese provide your Email address in order to be contacted.",
+                message: "Please provide your Email address in order to be contacted.",
                 validate: (emailInput) => {
                     if (emailInput) {
                         return true;
