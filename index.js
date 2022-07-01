@@ -151,10 +151,7 @@ questions()
         const createPage = generateMarkdown(userInput);
 
 
-
-
-
-        fs.writeFile('README.md.', createPage, err => {
+        fs.writeFile('README.md', createPage, err => {
             if (err) throw new Error(err);
             console.log("README was created!");
         });
