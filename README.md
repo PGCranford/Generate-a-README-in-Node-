@@ -1,46 +1,26 @@
-# tets  
-  ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Node A README with Ease 
 
-  Table of contents
+## Purpose 
 
-  1.[Descripition](#Descripition)
-
-  2.[LicenseInformation](#LicensceInformation)
-
-  3.[Installation Instruction](#Installation-Instructions)
-
-  4.[Usage](#Usage)
-
-  5.[Contributors](#Contributors)
-
-  6.[Test Instruction](#Test-Instruction)
-
-  7.[Questions](#Questions)
+This application allows a user to create a README file in VS code through a series of prompts 
 
 
-  ## Descripition 
-  test
+## Flow Video 
 
-  ## License Information 
-  The MIT License is an extremely popular open source software license used on the likes of Ruby on Rails, jQuery, and Node.js. As an open source license, the MIT License dictates what you must, can, and can’t do when you use, modify, and/or redistribute the licensed code
+https://drive.google.com/file/d/1UJxci69JZioDZvfMQpV8NuzEZ_rerluV/view
 
-  
-  ## Installation Instructions 
-  test
+## Screenshots of finished README
+
+![image](https://user-images.githubusercontent.com/104169772/176949312-f7b6e7ba-7772-4a89-83ec-2925c50dc37f.png)
 
 
-  ## Usage 
-  tets
 
-  ## Contributors
-  test
+## Made With 
 
-  ## Test Instruction 
-  test
+VS Code 
+NPM Inquirer 
+Github Badges
 
-  
-  ### Questions 
-  https://github.com/test  
-  test
+### Created by 
+Patrick Cranford at Inked Ape Design 
 
-  
