@@ -1,46 +1,20 @@
-# test  
-  ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Node a README with Ease 
 
-  Table of contents
+## Purpose 
 
-  1.[Descripition](#Descripition)
+This application allows users to create a basic README in the command by following a series of prompts 
 
-  2.[LicenseInformation](#LicensceInformation)
+## Made with 
+VS Code NPM Inquirer 
 
-  3.[Installation Instruction](#Installation-Instructions)
+## Flow through link
 
- 4.[Usage](#Usage)
+"https://drive.google.com/file/d/1UJxci69JZioDZvfMQpV8NuzEZ_rerluV/view"
 
-  5.[Contributors](#Contributors)
+### Created by
+Patrick Cranford at Inked Ape Design 
 
-  6.[Test Instruction](#Test-Instruction)
+### Screenshot 
 
-  7.[Questions](#Questions)
-
-
-  ## Descripition 
-  test
-
-  ## License Information 
-  The MIT License is an extremely popular open source software license used on the likes of Ruby on Rails, jQuery, and Node.js. As an open source license, the MIT License dictates what you must, can, and can’t do when you use, modify, and/or redistribute the licensed code
-
-  
-  ## Installation Instructions 
-  tets
-
-
-  ## Usage 
-  test
-
-  ## Contributors
-  test
-
-  ## Test Instruction 
-  test
-
-  
-  ### Questions 
-  https://github.com/test  
-  test
-
-  
+![readme image 1 ][image](https://user-images.githubusercontent.com/104169772/176938520-08bf0000-b482-4f92-afaf-533aae14d965.png)
+![readme image 2 ][image](https://user-images.githubusercontent.com/104169772/176938600-788e390d-2af4-4ea0-9255-a7d794e6c381.png)

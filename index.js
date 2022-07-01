@@ -154,7 +154,7 @@ questions()
 
 
 
-        fs.writeFile('README.md', createPage, err => {
+        fs.writeFile('README.md.test', createPage, err => {
             if (err) throw new Error(err);
             console.log("README was created!");
         });
